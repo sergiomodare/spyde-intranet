@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Spyde-OS</title>
+  <link rel="stylesheet" href="style/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="style/style.css" type="text/css" />
+  <link rel="icon" href="favicon.png" type="image/png" sizes="16x16" />
+
+</head>
+
+<div class="container">
+<body>
+  <ul class="nav"id="logop" >
+    <li class="nav-item">
+      <a class="nav-link" href="index.html"><img src="spydelogop.png" class="img-fluid" /></a>
+    </li>
+  </ul>
+    <header>
+      <div class="row">
+        <div class="col-3" id="logop">
+          
+        </div>
+        <div class="col-9">
+          <p>
+            Av. Dr Mário Guimarães,803 Centro Nova Iguaçu
+            TEL/FAX:(21)2882-4400
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2>ORDEM DE SERVIÇO</h2>
+        </div>
+      </div>
+    </header>
+    <form>
+      <fieldset>
+        <legend>TIPO DE OS</legend>
+        <div class="form-row">
+          <div class="col-3">
+            <input name="ttipo" id="ccontrato" type="radio" />
+            <label id="lcontrato" for="ccontrato">CONTRATO</label>
+          </div>
+          <div class="col-3">
+            <input name="ttipo" id="cacobrar" checked="checked" type="radio" />
+            <label id="lacobrar" for="cacobrar">COBRAR</label>
+          </div>
+          <div class="col-3">
+            <input name="ttipo" id="cgarantia" type="radio" />
+            <label id="lgarantia" for="cgarantia">GARANTIA</label>
+          </div>
+          <div class="col-3">
+            <input name="ttipo" id="coutros" type="radio" />
+            <label id="loutros" for="coutros">OUTROS</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend id="dataos">DATA DA OS</legend>
+        <div class="row">
+          <div class="col-5 col-md-9">
+            <label id="ldata" for="cdata">[DATA]</label>
+          </div>
+          <div class="col-7 col-md-3">
+            <input class="form-control" id="cdata" type="tel" placeholder="dd/mm/aaaa">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5 col-md-9">
+            <label id="lhora" for="chora">[HORA]</label>
+          </div>
+          <div class="col-7 col-md-3">
+            <input class="form-control" id="chora" type="tel" placeholder="hh:mm">
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend id="datacli">DADOS DO CLIENTE</legend>
+        <div class="form-row">
+          <div class="col-2"><label for="cnome">Nome</label></div>
+          <div class="col-10"><input class="form-control" type="text" /></div>
+        </div>
+        <div class="form-row">
+          <div class="col-2"><label for="cend">End.</label></div>
+          <div class="col-10"><input class="form-control" type="text" /></div>
+        </div>
+        <div class="form-row">
+          <div class="col-2"><label for="ctel">Tel.</label></div>
+          <div class="col-10">
+            <input class="form-control" name="ttel" id="ctel" type="tel" placeholder="DDD+NÚMERO">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-2"><label for="ccont">Cont.</label></div>
+          <div class="col-10"><input class="form-control" type="text" /></div>
+        </div>
+      </fieldset>
+      <fieldset id="relatorio">
+        <legend id="relat">RELATÓRIO</legend>
+
+        <div class="form-row">
+          <div class="col-6 col-md-3">
+            <label for="cequip">EQUIPAMENTOS/NO DE SÉRIE</label>
+          </div>
+          <div class="col-6 col-md-9">
+            <textarea class="form-control" name="tequip" id="cequip"></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-6 col-md-3">
+            <label for="cserv">DEFEITOS/SERVIÇOS</label>
+          </div>
+          <div class="col-6 col-md-9">
+            <textarea class="form-control" name="tserv" id="cserv"></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-6 col-md-3">
+            <label for="crelat">ORÇAMENTO</label>
+          </div>
+          <div class="col-6 col-md-9">
+            <textarea class="form-control" name="trelat" id="crelat"></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-6 col-md-3">
+            <label id="lobs" for="cobs">Obs.</label>
+          </div>
+          <div class="col-6 col-md-9">
+            <textarea class="form-control" name="tobs" id="cobs"></textarea>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset id="valores">
+        <legend id="val">VALORES</legend>
+        <div class="row">
+          <div class="col-6 col-md-9">
+            <label id="lvalpecas" for="cvalpeca">VALOR DE PEÇAS</label>
+          </div>
+          <div class="col-6 col-md-3">
+            <input class="form-control" name="tvalpeca" id="cvalpeca" type="tel" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-9">
+            <label id="lvalserv" for="cvalserv">VALOR DE SERVIÇOS</label>
+          </div>
+          <div class="col-6 col-md-3">
+            <input class="form-control" name="tvalserv" id="cvalserv" type="tel" />
+          </div>
+        </div>
+      </fieldset>
+      <fieldset id="temposerv">
+        <legend id="tempserv">TEMPO DE SERVIÇO</legend>
+        <div class="row">
+          <div class="col-6 col-md-9">
+            <label id="lchegada" for="cchegada">[CHEGADA:]</label>
+          </div>
+          <div class="col-6 col-md-3">
+            <input class="form-control" name="tchegada" id="cchegada" type="tel" placeholder="hh:mm">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-9">
+            <label id="lsaida" for="csaida">[SAÍDA:]</label>
+          </div>
+          <div class="col-6 col-md-3">
+            <input class="form-control" name="tsaida" id="csaida" type="tel" placeholder="hh:mm">
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <footer>
+      <div id="atencao">
+        <h4>*ATENÇÃO*</h4>
+        <p>
+          Não será de responsabilidade da SPYDE o backup de dados no caso de
+          formatação, troca ou instalação de hard-disks ou SSDs.
+        </p>
+      </div>
+
+      <h5>VALIDAÇÃO:</h5>
+      <div class="form-row">
+        <div class="col-6"><label>TÉCNICO RESPONSÁVEL</label></div>
+        <div id="asstecnico" class="col-6">
+          <select class="form-control">
+            <option>Sérgio Rocha</option>
+            <option>Carlos Machado</option>
+          </select>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-6">
+          <p>ASSINATURA DO CLIENTE</p>
+        </div>
+        <div id="asscliente" class="col-6"></div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="style/js/bootstrap.js"></script>
+  <script type="text/javascript" src="style/js/jquery-3.4.1.js"></script>
+  <script src="style/jquery.mask.min.js"></script>
+  <script>
+    $("#cvalserv").mask("999.999.999,99", { reverse: true })
+    $("#cvalpeca").mask("999.999.999,99", { reverse: true })
+    $("#ctel").mask("(00)00000-0000")
+    $("#cchegada").mask("00:00")
+    $("#csaida").mask("00:00")
+    $("#cdata").mask("00/00/0000")
+    $("#chora").mask("00:00")
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+header{ border: black solid;}
+
+
+.container{
+     background-color: lightgrey;
+     border: solid black 
+    }
+
+.col-3{
+border: solid #bbb 0.5px;
+}
+#logop{
+  
+  margin: 20px,0px,0px,0px;
+  border: none;
+
+}
+h2
+ {
+   text-align: center;
+ }
+ h5
+ {
+   text-align: center;
+   margin-bottom: 30px;
+ }
+ legend#tipos
+ {
+   text-align: left;
+ }
+ legend#dataos
+ {
+   text-align: left;
+ }
+ legend#datacli
+ {
+   text-align: left;
+ }
+ legend#relat
+ {
+   text-align: left;
+ }
+ legend#val
+ {
+   text-align: left;
+  }
+  legend#tempserv
+  {
+    text-align: left;
+  }
+  fieldset#temposerv
+  {
+    margin-bottom: 50px;
+  }
+ #atencao
+ {
+   border: solid black 1px;
+   margin-bottom: 50px;
+   text-align: center;
+ }
+
+ #asscliente
+ {
+   border-bottom: solid black 1px;
+ }

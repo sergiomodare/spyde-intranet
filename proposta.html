@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="style/style.css" type="text/css" />
     <link rel="icon" href="favicon.png" type="image/png" sizes="16x16" />
+    <!-- <script src="/js/jquary/jquery.js"></script> -->
     <style>
         .end {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,16 +25,12 @@
 </head>
 
 <body>
-    <ul class="nav">
-        <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-        </li>
-    </ul>
+
     <div class="container">
         <p></p>
         <div class="row">
             <div class="col-3" id="logop">
-                <img src="spydelogo.png" class="img-fluid" />
+                <a class="nav-link" href="index.html"><img src="spydelogo.png" class="img-fluid" /></a>
             </div>
             <div class="col-6">
                 <p class="end">Av. Dr Mário Guimarães,803 Centro - Nova Iguaçu - RJ</p>
@@ -74,10 +71,10 @@
                             <th>Vlr Total</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="descricao">
                         <tr id="item">
                             <td width="10%">
-                                <input class="form-control" type="number" id="quant" onmouseup="calcular()">
+                                <input class="form-control" type="number" id="quant" min="1" onmouseup="calcular()">
                             </td>
                             <td width="70%">
                                 <input class="form-control" type="text" id="prod">
@@ -88,22 +85,34 @@
                             <td width="10%">
                                 <input class="form-control" type="text" id="vt" onkeyup="calcular()">
                             </td>
+                            <td>
+                                <button type="button" onclick="remove(this)">Excluir</button>
+                            </td>
                         </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5" style="text-align: left;">
+                                <button onclick="AddTableRow()" type="button">Adicionar Produto</button>
+                            </td>
+                        </tr>
+                    </tfoot>
                 </table>
-                
+
                 <table class="table table-striped  table-hover table-sm " id="total">
-                    <tr>
-                        <th>
-                            <label>Valor total da Proposta:</label>
-                        </th>
-                        <td>
-                        </td>
-                        <td>
-                        </td>
-                        <td width="20%">
-                            <input class="form-control" type="tel" maxlength="8" id="vtp">
-                        </td>
-                    </tr>
+                    <tbody id="valorprop">
+                        <tr>
+                            <th>
+                                <label>Valor total da Proposta:</label>
+                            </th>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td width="20%">
+                                <input class="form-control" type="tel" maxlength="8" id="vtp">
+                            </td>
+                        </tr>
                 </table>
                 </tbody>
                 <div class="form-group">
@@ -147,15 +156,16 @@
                     }
                 </script>
                 <script>
-                    $("#vu").mask("999.999.999,99", { reverse: true })
-                    $("#vt").mask("999.999.999,99", { reverse: true })
-                    $("#vtp").mask("999.999.999,99",{ reverse: true })
+                    $("#vu").mask("999.999.999.99", { reverse: true })
+                    $("#vt").mask("999.999.999.99", { reverse: true })
+                    $("#vtp").mask("999.999.999.99", { reverse: true })
                     $("#ctel").mask("(00)00000-0000")
                     $("#cdata").mask("00/00/0000")
                     $("#chora").mask("00:00")
                 </script>
-                
+                <script src="/function.js"></script>
             </div>
+
 </body>
 
 </html>
